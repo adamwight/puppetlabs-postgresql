@@ -168,7 +168,7 @@ define postgresql::server::instance::config (
     }
   }
 
-  if $listen_addresses {
+  if $listen_addresses != undef {
     postgresql::server::config_entry { "listen_addresses_for_instance_${name}":
       key   => 'listen_addresses',
       value => $listen_addresses,
