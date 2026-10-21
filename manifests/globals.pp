@@ -223,7 +223,7 @@ class postgresql::globals (
     },
     'Archlinux' => '9.2',
     'Gentoo' => '9.5',
-    'FreeBSD' => '17',
+    'FreeBSD' => '18',
     'OpenBSD' => $facts['os']['release']['full'] ? {
       /5\.6/ => '9.3',
       /5\.[7-9]/ => '9.4',
